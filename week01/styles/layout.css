@@ -1,0 +1,78 @@
+body {
+    font-size:1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 0;
+
+    }
+header h1{
+    font-size: 1.2rem;
+    text-align: left;
+    background-color: rgb(34, 34, 34);
+    color:blanchedalmond;
+    padding: 2rem;
+    margin-bottom:-20px;
+    padding-top: 10px;
+
+}
+header{
+    grid-column: 1/4;
+    margin-bottom: -20px;
+}
+footer{
+    font-size:1.2rem;
+    background-color: rgb(34, 34, 34);
+    color:blanchedalmond;
+    padding: 3rem;
+    text-align: center;
+    grid-column: 1/4;
+    padding-top: 10px;
+}
+.parent{
+    display:grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    
+}
+.navbar{
+    background-color: black;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navbar li {
+    flex: 1 1 auto;
+}
+.navbar a{
+    display: block;
+    color:blanchedalmond;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: blue;
+
+}
+.placeholder-content{
+    background-color: rgb(226, 198, 198);
+    grid-column: 1 / 2;
+
+    padding: 1.2rem;
+}
+.main-content{
+    background-color: rgb(70, 69, 69);
+    grid-column: 2/3;
+    
+    padding: 1.2rem;
+}
+.aside-content{
+    background-color: rgb(221, 208, 188);
+    grid-column: 3/4;
+    height: 300px;
+    padding: 1.2rem;
+    
+}
